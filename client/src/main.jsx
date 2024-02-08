@@ -9,7 +9,7 @@ import "./main.css";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/portfolio",
     element: <Root />,
     errorElement: <ErrorPage />,
   },
