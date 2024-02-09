@@ -1,15 +1,23 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { useTypewriter, Cursor } from "react-simple-typewriter";
 
 function Header() {
+  const [text] = useTypewriter({
+    words: ["Finnley Grange!", "A Software Engineer."],
+    loop: 0,
+  });
+
   return (
-    <div className="container d-flex flex-column align-items-center justify-content-center">
-      <div>
+    <div className="header container d-flex flex-column align-items-center justify-content-center">
+      <div className="title">
         <h1>
-          Hi, I am <br />
-          <span className="name">Finnley Grange</span>
+          <span className="intro">Hi, I am</span>
+          <br />
+          <span className="name">
+            {text}
+            <Cursor cursorColor="#6ea8fe" />
+          </span>
         </h1>
-        <hr></hr>
-        <p>A Software Engineer</p>
       </div>
     </div>
   );

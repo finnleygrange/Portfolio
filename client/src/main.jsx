@@ -5,13 +5,18 @@ import "bootstrap/dist/js/bootstrap.js";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Root from "./routes/root";
 import ErrorPage from "./error-page";
-import "./main.css";
+import "./main.scss";
+import Projects from "./routes/projects";
 
 const router = createBrowserRouter([
   {
     path: "/portfolio",
     element: <Root />,
     errorElement: <ErrorPage />,
+  },
+  {
+    path: "/portfolio/projects",
+    element: <Projects />,
   },
 ]);
 

@@ -2,7 +2,7 @@ import React from "react";
 
 function SocialLinks() {
   return (
-    <div className="icons d-flex justify-content-center">
+    <div className="icons d-flex justify-content-center align-items-center">
       <a href="https://github.com/finnleygrange" title="Github">
         <i className="icon fa-brands fa-github"></i>
       </a>
