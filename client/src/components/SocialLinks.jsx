@@ -1,4 +1,5 @@
 import React from "react";
+import resume from "../assets/FinnleyGrange_Resume.pdf";
 
 function SocialLinks() {
   return (
@@ -20,7 +21,7 @@ function SocialLinks() {
       >
         <i className="icon fa-brands fa-youtube"></i>
       </a>
-      <a href="" target="_blank">
+      <a href={resume} target="_blank">
         <i className="icon fas fa-file-alt resume-icon" title="Resume"></i>
       </a>
     </div>
