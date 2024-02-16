@@ -1,7 +1,7 @@
 import "./root.css";
 import Header from "../components/Header";
 import SocialLinks from "../components/SocialLinks";
-import Projects from "./projects";
+import Projects from "./Projects";
 import ProfilePicture from "../components/ProfilePicture";
 
 function Root() {

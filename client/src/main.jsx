@@ -3,19 +3,19 @@ import ReactDOM from "react-dom/client";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/js/bootstrap.js";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Root from "./routes/root";
-import ErrorPage from "./error-page";
+import Root from "./routes/Homepage";
 import "./main.scss";
-import Projects from "./routes/projects";
+import Projects from "./routes/Projects";
+import ErrorPage from "./routes/ErrorPage";
 
 const router = createBrowserRouter([
   {
-    path: "/portfolio",
+    path: "/",
     element: <Root />,
     errorElement: <ErrorPage />,
   },
   {
-    path: "/portfolio/projects",
+    path: "/projects",
     element: <Projects />,
   },
 ]);
